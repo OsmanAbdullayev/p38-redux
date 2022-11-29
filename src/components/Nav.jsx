@@ -24,7 +24,7 @@ function Header() {
 					</Nav>
 					<Form className="d-flex">
 						<Button variant="success">
-							<Link className="btn text-white">Dashboard</Link>
+							<Link to="/admin" className="btn text-white">Dashboard</Link>
 						</Button>
 					</Form>
 				</Navbar.Collapse>
