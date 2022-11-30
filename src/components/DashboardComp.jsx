@@ -1,6 +1,7 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
-const DashboardComp = ({ title, desc, count, img }) => {
+const DashboardComp = ({ title, desc, count, img, id }) => {
 	return (
 		<tr>
 			<th scope="row">{count + 1}</th>
@@ -10,7 +11,7 @@ const DashboardComp = ({ title, desc, count, img }) => {
 			<td>{title}</td>
 			<td>{desc}</td>
 			<td>
-				<button className="btn btn-success w-50">Edit</button>
+				<Link to={`edit/${id}`} className="btn btn-success w-50">Edit</Link>
 			</td>
 		</tr>
 	);

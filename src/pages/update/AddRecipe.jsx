@@ -1,13 +1,20 @@
-import React from 'react'
-import RecipeForm from '../../components/RecipeForm'
+import React from "react";
+import { addRecipe } from "../../actions/actionRecipe";
+import { connect } from "react-redux";
+import RecipeForm from "../../components/RecipeForm";
 
-const AddRecipe = () => {
-  return (
-    <div>
-      <h1 className="text-center my-3">Add Recipe</h1>
-      <RecipeForm />
-    </div>
-  )
-}
+const AddRecipe = (props) => {
+	return (
+		<div>
+			<h1 className="text-center my-3">Add Recipe</h1>
+			<RecipeForm
+				onFormSubmit={(fd) => {
+					props.dispatch(addRecipe(fd));
+					props.history.push("/admin");
+				}}
+			/>
+		</div>
+	);
+};
 
-export default AddRecipe
+export default connect()(AddRecipe);

@@ -16,7 +16,7 @@ const AppRouter = () => {
         <Route path="/recipes/:id" component={RecipeDetails} />
         <Route path="/admin" component={Dashboard} />
         <Route path="/add" component={AddRecipe} />
-        <Route path="/edit" component={EditRecipe} />
+        <Route path="/edit/:id" component={EditRecipe} />
       </Switch>
     </div>)
 }
