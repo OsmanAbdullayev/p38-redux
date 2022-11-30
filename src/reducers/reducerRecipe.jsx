@@ -4,7 +4,6 @@ export const RecipeReducer = (state = recipeState, action) => {
 	switch (action.type) {
 		case "ADD_RECIPE":
 			return [...state, action.recipe];
-		case "REMOVE_RECIPE":
 		case "EDIT_RECIPE":
 			return state.map((b)=> {
 				if (b.id === action.id) {
@@ -13,6 +12,10 @@ export const RecipeReducer = (state = recipeState, action) => {
 						...action.update
 					}
 				} else {return b}
+			})
+		case "REMOVE_RECIPE":
+			return state.filter(({id})=>{
+				return id != action.id
 			})
 		default:
 			return state;

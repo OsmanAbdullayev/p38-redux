@@ -12,5 +12,6 @@ export const addRecipe = ({ title, desc, img }) => ({
 });
 
 export const editRecipe = (id, update) => ({ type: "EDIT_RECIPE", id, update });
+export const removeRecipe = ({ id }) => ({ type: "REMOVE_RECIPE", id: id });
 
 // Action End

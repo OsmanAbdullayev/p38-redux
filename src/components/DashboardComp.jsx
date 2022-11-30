@@ -11,12 +11,12 @@ const DashboardComp = ({ title, desc, count, img, id }) => {
 			<td>{title}</td>
 			<td>{desc}</td>
 			<td>
-				<Link to={`edit/${id}`} className="btn btn-success w-50">Edit</Link>
+				<Link to={`edit/${id}`} className="btn btn-success w-50">
+					Edit
+				</Link>
 			</td>
 		</tr>
 	);
 };
-
-
 
 export default DashboardComp;
