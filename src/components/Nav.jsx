@@ -7,18 +7,18 @@ import { NavLink, Link } from "react-router-dom";
 
 function Header() {
 	return (
-		<Navbar bg="warning" expand="lg">	
+		<Navbar bg="warning" expand="lg" className="shadow">	
 			<Container fluid>
-				<Link to="/" className="navbar-brand fw-bold">
+				<Link to="/" className="navbar-brand fw-bold fs-3 text-danger">
 					BOOM!
 				</Link>
 				<Navbar.Toggle aria-controls="navbarScroll" />
 				<Navbar.Collapse id="navbarScroll">
 					<Nav className="me-auto my-2 my-lg-0" style={{ maxHeight: "100px" }} navbarScroll>
-						<NavLink to="/" className="nav-link">
+						<NavLink to="/" className="nav-link fw-bold" exact={true}>
 							Home
 						</NavLink>
-						<NavLink to="/recipes" className="nav-link">
+						<NavLink to="/recipes" className="nav-link fw-bold">
 							Recipes
 						</NavLink>
 					</Nav>

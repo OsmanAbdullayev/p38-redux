@@ -6,7 +6,7 @@ const RecipeDetailsComponent = ({ title, desc, img }) => {
 			<div className="col-10 col-sm-8 col-lg-5">
 				<img
 					src={img}
-					className="d-block mx-lg-auto img-fluid"
+					className="d-block mx-lg-auto img-fluid shadow"
 					alt={title}
 					width={700}
 					height={500}
