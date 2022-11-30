@@ -6,7 +6,7 @@ import {Link} from 'react-router-dom'
 
 const RecipeCard = ({title, desc, img, id}) => {
 	return (
-		<Col xs={12} md={6} lg={4}>
+		<Col xs={12} md={6} lg={3}>
 			<Card className="h-100">
 				<Card.Img variant="top" className="h-75" src={img} alt={title} />
 				<Card.Body >
@@ -14,7 +14,7 @@ const RecipeCard = ({title, desc, img, id}) => {
 					<Card.Text>
 						{`${desc.substring(0, 30)}...`}
 					</Card.Text>
-					<Button variant="success"><Link className="btn text-white" to={`/recipes/${id}`}>Details</Link></Button>
+					<Link className="btn text-white" to={`/recipes/${id}`}><Button variant="success"> Details</Button></Link>
 				</Card.Body>
 			</Card>
 		</Col>

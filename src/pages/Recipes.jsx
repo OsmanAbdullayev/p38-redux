@@ -5,7 +5,7 @@ import Row from "react-bootstrap/Row";
 
 const Recipes = (props) => {
 	return (
-		<Row className="my-4">
+		<Row className="my-4 g-4">
 			{props.pvalue.map((fd, i) => {
 				return <RecipeCard key={i} {...fd} />;
 			})}

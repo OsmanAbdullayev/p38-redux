@@ -15,8 +15,10 @@ export const RecipeReducer = (state = recipeState, action) => {
 			})
 		case "REMOVE_RECIPE":
 			return state.filter(({id})=>{
-				return id != action.id
+				return id !== action.id
 			})
+			case "SET_RECIPES":
+				return action.recipes;
 		default:
 			return state;
 	}

@@ -1,5 +1,5 @@
 import React from "react";
-import { addRecipe } from "../../actions/actionRecipe";
+import {  addRecipeToDatabase } from "../../actions/actionRecipe";
 import { connect } from "react-redux";
 import RecipeForm from "../../components/RecipeForm";
 
@@ -9,7 +9,7 @@ const AddRecipe = (props) => {
 			<h1 className="text-center my-3">Add Recipe</h1>
 			<RecipeForm
 				onFormSubmit={(fd) => {
-					props.dispatch(addRecipe(fd));
+					props.dispatch(addRecipeToDatabase(fd));
 					props.history.push("/admin");
 				}}
 			/>

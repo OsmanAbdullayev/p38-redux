@@ -7,10 +7,10 @@ import { NavLink, Link } from "react-router-dom";
 
 function Header() {
 	return (
-		<Navbar bg="warning" expand="lg">
+		<Navbar bg="warning" expand="lg">	
 			<Container fluid>
 				<Link to="/" className="navbar-brand fw-bold">
-					John Deere
+					BOOM!
 				</Link>
 				<Navbar.Toggle aria-controls="navbarScroll" />
 				<Navbar.Collapse id="navbarScroll">
@@ -23,9 +23,8 @@ function Header() {
 						</NavLink>
 					</Nav>
 					<Form className="d-flex">
-						<Button variant="success">
-							<Link to="/admin" className="btn text-white">Dashboard</Link>
-						</Button>
+							<Link to="/admin" className="btn text-white"><Button variant="success">Dashboard</Button></Link>
+						
 					</Form>
 				</Navbar.Collapse>
 			</Container>

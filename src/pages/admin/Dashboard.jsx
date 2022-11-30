@@ -28,7 +28,7 @@ const Dashboard = (props) => {
           <td></td>
           <td></td>
           <td>
-          <Link to="/add" className="btn btn-primary w-50">Add Item</Link>
+          <Link to="/add" className="btn btn-primary w-75 text-center ">Add Item</Link>
           </td>
         </tr>
 				</tbody>
